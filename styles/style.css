@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Work+Sans:wght@700&display=swap');
+
+*{
+    font-family:'work sans';
+}
+/* header styles */
+.header{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 99px;
+}
+.header-nav{
+    display: flex;
+    list-style-type: none;
+    margin-right: 240px;
+}
+.header-nav li{
+   padding-left: 40px;
+}
