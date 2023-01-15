@@ -117,7 +117,6 @@
 .feature2{
     display: flex;
     justify-content: space-around;
-    height: 1050px;
 }
 .feature2-container{
     display: flex;
@@ -125,12 +124,12 @@
     margin-top: 169px;
     margin-left: 244px;
     margin-right: 54px;
+    height: 1059px;
 }
 .feature2-title{
     border-left:5px solid #FF900E;
     font-weight: 700;
     font-size: 45px;
-    line-height: 53px;
     padding-left: 21px;
 }
 .feature2-description{
@@ -139,12 +138,13 @@
     color: #727272;
 }
 .feature2-items{
-    height: 100%;
+
     overflow: hidden;
     text-transform: none;
     text-overflow: ellipsis;
 }
 .feature2-item{
+    position: relative;
     padding: 30px 42px 30px 30px;
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
@@ -306,4 +306,88 @@
     text-align: center;
     color: #424242;
 
+}
+/* Mobile View */
+@media only screen and (max-width:568px){
+    /* header styles */
+    .header{
+        flex-direction: column;
+    }
+    .header-nav{
+        text-align: center;
+        flex-direction: column;
+    }
+    /* group styles */
+    .group{
+        width: 100%;
+        background-color: rgba(255, 144, 14, 0.1);
+    }
+    .group-container{
+        text-align: center;
+        align-items: center;
+    }
+    .group-item{
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 20px;
+        padding-bottom: 0;  
+    }
+    .group-banner{
+        width: 100%;
+        height: 300px;
+    }
+    /* feature styles */
+    .feature-container{
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    padding-left: 100px;
+    }
+    .feature-banners{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* feature2 styles */
+    .feature2{
+        flex-direction: column;
+        margin-top: 1px;     
+    }
+    .feature2-element{
+        overflow: hidden;
+        text-transform: none;
+        text-overflow: ellipsis;
+    }
+    .feature2-title{
+        margin-left: 2px;
+    }
+    .experience-banner{
+        width: 300px;
+        height: 400px;
+    }
+    /* architect design*/
+    .top-architects{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px 10px ;
+    }
+    /* fact styles */
+    .fact{
+        flex-direction: column;
+    }
+    .fact-items{
+        flex-direction: column;
+    }
+/* sponsor styles */
+    .sponsor-container{
+        flex-direction: column;
+    }
+    .sponsor-items{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 10px;
+    }
+    .footer{
+        width: 500px;
+        font-size: 10px;
+        padding: 0px 20px;
+        margin: 0px 0px;
+        background-color: white;
+    }
 }
