@@ -251,7 +251,10 @@
     border: 1px solid #FF900E;
     border-radius: 8px;
     padding: 50px 35px;
-    
+}
+.fact-item img{
+    width: 45px;
+    height: 45px;
 }
 
 /* Sponsors Styles */
